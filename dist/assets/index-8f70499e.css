@@ -1,1 +1,126 @@
-body{background-color:#c791fa}body{justify-content:center;text-align:center}.entry{border-radius:10px;padding:10px 20px 10px 35px}form{padding:10% 20px 20px}#btnEnviar{margin-top:20px;background-color:#301bee;padding:5px 35px;border-radius:15px;font-family:Verdana,Geneva,Tahoma,sans-serif;color:#fff}.txt{font-family:Trebuchet MS,Lucida Sans Unicode,Lucida Grande,Lucida Sans,Arial,sans-serif}#txtBienvenida{font-family:Trebuchet MS,Lucida Sans Unicode,Lucida Grande,Lucida Sans,Arial,sans-serif;font-style:oblique;color:#fff}#selectSignos{display:block;margin:100px;width:400px;padding:5px 50px 5px 10px;border-radius:10px;background-color:#473f3f;color:#fff}#txtSeleccionPage{padding:50px 50px 0;font-family:Gill Sans,Gill Sans MT,Calibri,Trebuchet MS,sans-serif;font-style:italic}#btnHome{margin-top:100px;background-color:#00f;color:#fff;padding:5px 50px;border-radius:10px}#textoSigno{border-radius:10px;display:flex;background-color:#5f5252;color:#fff}.container{height:300px;display:grid;place-items:center}#editSignos{display:block;margin:100px;width:400px;padding:5px 50px 5px 10px;border-radius:10px;background-color:#473f3f;color:#fff}#btnEditar{margin-top:10%;padding:10px 20px;border-radius:10px;background-color:brown;color:#fff}#textoAdmin{font-style:italic}#textoEditar{border-radius:10px;display:flex;background-color:#5f5252;color:#fff}#btnHomeAdmin{margin-top:15px;padding:5px 15px;border-radius:10px;background-color:#00f;color:#fff}
+/* Estilos generales para la página */
+body {
+    background-color: #c791fa;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+/* Estilo para los campos de entrada */
+.entry {
+    border-radius: 10px;
+    padding: 10px 20px 10px 35px;
+}
+
+/* Formulario */
+form {
+    padding: 10% 20px 20px;
+}
+
+/* Estilo del botón de enviar */
+#btnEnviar {
+    margin-top: 20px;
+    background-color: #301bee;
+    padding: 5px 35px;
+    border-radius: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
+
+/* Estilos para texto */
+.txt {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#txtBienvenida {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: oblique;
+    color: #fff;
+}
+
+/* Estilo del select de signos */
+#selectSignos {
+    display: block;
+    margin: 100px;
+    width: 400px;
+    padding: 5px 50px 5px 10px;
+    border-radius: 10px;
+    background-color: #473f3f;
+    color: #fff;
+}
+
+/* Estilo de texto en la página de selección */
+#txtSeleccionPage {
+    padding: 50px 50px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+
+/* Estilo del botón de inicio */
+#btnHome {
+    margin-top: 100px;
+    background-color: #00f;
+    color: #fff;
+    padding: 5px 50px;
+    border-radius: 10px;
+}
+
+/* Estilo de los textos con signo */
+#textoSigno {
+    border-radius: 10px;
+    display: flex;
+    background-color: #5f5252;
+    color: #fff;
+}
+
+/* Contenedor para centrar elementos */
+.container {
+    height: 300px;
+    display: grid;
+    place-items: center;
+}
+
+/* Estilo del formulario para editar signos */
+#editSignos {
+    display: block;
+    margin: 100px;
+    width: 400px;
+    padding: 5px 50px 5px 10px;
+    border-radius: 10px;
+    background-color: #473f3f;
+    color: #fff;
+}
+
+/* Estilo del botón de editar */
+#btnEditar {
+    margin-top: 10%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: brown;
+    color: #fff;
+}
+
+/* Estilo del texto admin */
+#textoAdmin {
+    font-style: italic;
+}
+
+/* Estilo del texto para editar */
+#textoEditar {
+    border-radius: 10px;
+    display: flex;
+    background-color: #5f5252;
+    color: #fff;
+}
+
+/* Estilo del botón de inicio en administración */
+#btnHomeAdmin {
+    margin-top: 15px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: #00f;
+    color: #fff;
+}
