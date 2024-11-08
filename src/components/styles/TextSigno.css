@@ -1,6 +1,12 @@
-#textoSigno{
-    border-radius: 10px;
+#textoSigno {
     display: flex;
-    background-color: rgb(95, 82, 82);
+    align-items: center; /* Alinea el texto verticalmente */
+    justify-content: center; /* Alinea el texto horizontalmente */
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: rgb(95, 82, 82); /* Fondo original */
     color: white;
+    font-size: 1rem;
+    border-radius: 12px; /* Bordes más suaves */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra suave */
+    text-align: center;
 }

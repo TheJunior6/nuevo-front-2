@@ -2,10 +2,10 @@
     max-width: 400px;
     margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    background-color: #f3f3f3; /* Fondo más suave */
 }
 
 .form-registrar-premio {
@@ -15,24 +15,40 @@
 
 label {
     margin-bottom: 8px;
+    font-weight: bold;
+    color: #333; /* Aseguramos que el texto de las etiquetas tenga buen contraste */
 }
 
 input {
     margin-bottom: 16px;
     padding: 10px;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease; /* Transición suave en el borde */
+}
+
+input:focus {
+    border-color: #007bff; /* Cambio de borde cuando se enfoca el campo */
+    outline: none;
 }
 
 button {
-    padding: 10px;
+    padding: 12px 20px;
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
+    font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
 }
 
 button:hover {
     background-color: #0056b3;
+    transform: translateY(-3px); /* Efecto de elevación suave */
+}
+
+button:active {
+    transform: translateY(0); /* Vuelve a su posición original al hacer clic */
 }

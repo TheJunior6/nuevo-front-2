@@ -16,7 +16,7 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más suave */
     max-width: 800px;
     width: 100%;
     text-align: center;
@@ -27,6 +27,7 @@ body {
     font-size: 2.5em;
     color: #ff6347; /* Color vibrante */
     margin-bottom: 20px;
+    font-weight: bold;
 }
 
 /* Formulario para registrar código */
@@ -43,44 +44,52 @@ body {
 }
 
 .form-registrar input {
-    padding: 10px;
-    font-size: 1em;
+    padding: 12px;
+    font-size: 1.1em; /* Mayor tamaño para mejorar legibilidad */
     width: 60%;
     margin-bottom: 15px;
     border: 2px solid #ff6347;
-    border-radius: 5px;
+    border-radius: 8px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Efecto de transición */
+}
+
+.form-registrar input:focus {
+    border-color: #e5533f;
+    box-shadow: 0 0 8px rgba(255, 99, 71, 0.5); /* Efecto de sombra al enfocarse */
 }
 
 .form-registrar button {
     background-color: #ff6347;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
+    font-size: 1.1em; /* Mayor tamaño de texto */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .form-registrar button:hover {
     background-color: #e5533f;
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
 }
 
 /* Botón de refrescar */
 .btn-refresh {
     background-color: #4682b4;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
     margin-bottom: 20px;
 }
 
 .btn-refresh:hover {
     background-color: #357a9f;
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
 }
 
 /* Tabla de códigos registrados */
@@ -112,6 +121,7 @@ body {
 
 .tabla-codigos tr:hover {
     background-color: #ddd;
+    transform: translateY(-2px); /* Efecto de desplazamiento al pasar el ratón */
 }
 
 /* Mensaje cuando no hay códigos */

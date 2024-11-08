@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    background-color: #ffefd5;
+    background-color: #ffefd5; /* Color de fondo suave */
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
@@ -12,17 +12,22 @@ body {
 form {
     background-color: #fff;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra más suave */
     padding: 40px;
     width: 300px;
     text-align: center;
+    transition: box-shadow 0.3s ease; /* Transición en la sombra */
+}
+
+form:hover {
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2); /* Más sombra en hover */
 }
 
 h1#txtBienvenida {
     font-size: 28px;
     color: #ff6f61;
     margin-bottom: 20px;
-    animation: bounce 1s ease infinite alternate;
+    animation: bounce 1s ease-in-out 1; /* Animación de rebote más suave */
 }
 
 h4.txt {
@@ -40,11 +45,12 @@ input.entry {
     border-radius: 8px;
     outline: none;
     font-size: 14px;
-    transition: border-color 0.3s;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave en borde */
 }
 
 input.entry:focus {
     border-color: #f44336;
+    box-shadow: 0 0 8px rgba(244, 67, 54, 0.4); /* Efecto de foco suave */
 }
 
 input#btnEnviar {
@@ -56,7 +62,7 @@ input#btnEnviar {
     border-radius: 8px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 input#btnEnviar:hover {
@@ -72,6 +78,7 @@ button#forgotPasswordLink {
     cursor: pointer;
     text-decoration: underline;
     font-size: 14px;
+    transition: color 0.3s ease; /* Transición suave en el color */
 }
 
 button#forgotPasswordLink:hover {
@@ -83,7 +90,10 @@ button#forgotPasswordLink:hover {
     0% {
         transform: translateY(0);
     }
+    50% {
+        transform: translateY(-15px); /* Movimiento más pronunciado */
+    }
     100% {
-        transform: translateY(-10px);
+        transform: translateY(0);
     }
 }
