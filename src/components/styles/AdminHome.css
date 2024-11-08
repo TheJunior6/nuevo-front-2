@@ -1,48 +1,77 @@
-.container{
+.container {
     height: 300px;
     display: grid;
     place-items: center;
+    background-color: #f3f4f6; /* Fondo suave para contrastar */
 }
 
-#editSignos{
-    display: block;  
-    margin-bottom: 10px;
-    margin-top: 0px;
-    margin: 100px;
-    width: 400px;
-    padding: 5px 50px 5px 10px;
-    border-radius: 10px;
-    background-color: rgb(71, 63, 63);
+#editSignos {
+    display: block;
+    margin: 50px auto;
+    width: 90%;
+    max-width: 450px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #34495e; /* Fondo oscuro y elegante */
     color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-#btnEditar{
-    margin-top: 10%;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 10px;
-    background-color: brown;
+#btnEditar {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border-radius: 12px;
+    background-color: #e67e22; /* Color naranja para resaltar */
     color: white;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s ease;
+    cursor: pointer;
 }
 
-#textoAdmin{
+#btnEditar:hover {
+    background-color: #d35400; /* Naranja más oscuro en hover */
+    transform: translateY(-3px);
+}
+
+#btnEditar:active {
+    transform: translateY(1px);
+}
+
+#textoAdmin {
     font-style: italic;
-}
-
-#textoEditar{
-    border-radius: 10px;
-    display: flex;
-    background-color: rgb(95, 82, 82);
-    color: white;
-}
-
-#btnHomeAdmin{
+    font-size: 1.1rem;
+    color: #ecf0f1; /* Color blanco suave para contraste */
+    text-align: center;
     margin-top: 15px;
-    padding: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+}
+
+#textoEditar {
+    display: flex;
+    align-items: center;
+    background-color: #1abc9c; /* Fondo verde claro para destacar */
+    color: white;
     border-radius: 10px;
-    background-color: blue;
-    color: white
+    padding: 12px;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+#btnHomeAdmin {
+    margin-top: 25px;
+    padding: 12px 25px;
+    border-radius: 12px;
+    background-color: #3498db; /* Azul brillante */
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s ease;
+    cursor: pointer;
+}
+
+#btnHomeAdmin:hover {
+    background-color: #2980b9; /* Azul más oscuro en hover */
+    transform: translateY(-3px);
+}
+
+#btnHomeAdmin:active {
+    transform: translateY(1px);
 }
