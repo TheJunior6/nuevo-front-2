@@ -70,6 +70,10 @@ input#btnEnviar:hover {
     transform: translateY(-3px);
 }
 
+input#btnEnviar:active {
+    transform: translateY(1px); /* Mejora el efecto de clic */
+}
+
 button#forgotPasswordLink {
     margin-top: 15px;
     background-color: transparent;

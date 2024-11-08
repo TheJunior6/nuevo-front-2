@@ -1,3 +1,14 @@
-body{
-    background-color: rgb(199, 145, 250);
+body {
+    background-color: rgb(199, 145, 250); /* Fondo morado claro */
+    color: #333; /* Texto oscuro para buen contraste */
+}
+
+button, .btn-refresh {
+    background-color: #ff6347; /* Un color que contraste con el fondo morado */
+    color: white;
+}
+
+input {
+    border: 2px solid #ff6347;
+    background-color: #fff; /* Fondo blanco para los inputs */
 }

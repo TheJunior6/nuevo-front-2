@@ -16,10 +16,11 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra un poco más profunda */
     max-width: 800px;
     width: 100%;
     text-align: center;
+    transition: box-shadow 0.3s ease; /* Transición para sombra */
 }
 
 /* Título principal */
@@ -50,12 +51,12 @@ body {
     margin-bottom: 15px;
     border: 2px solid #ff6347;
     border-radius: 8px;
-    transition: border-color 0.3s, box-shadow 0.3s; /* Efecto de transición */
+    transition: border-color 0.3s, box-shadow 0.3s ease; /* Transición suave */
 }
 
 .form-registrar input:focus {
     border-color: #e5533f;
-    box-shadow: 0 0 8px rgba(255, 99, 71, 0.5); /* Efecto de sombra al enfocarse */
+    box-shadow: 0 0 8px rgba(255, 99, 71, 0.5); /* Sombra al enfocarse */
 }
 
 .form-registrar button {
@@ -74,6 +75,10 @@ body {
     transform: scale(1.05); /* Efecto de escala al pasar el ratón */
 }
 
+.form-registrar button:active {
+    transform: scale(1); /* Vuelve a su tamaño original */
+}
+
 /* Botón de refrescar */
 .btn-refresh {
     background-color: #4682b4;
@@ -89,7 +94,7 @@ body {
 
 .btn-refresh:hover {
     background-color: #357a9f;
-    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+    transform: scale(1.05); /* Efecto de escala */
 }
 
 /* Tabla de códigos registrados */
@@ -97,6 +102,7 @@ body {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    transition: box-shadow 0.3s ease; /* Transición suave para sombra */
 }
 
 .tabla-codigos th, .tabla-codigos td {
@@ -113,6 +119,8 @@ body {
 
 .tabla-codigos td {
     background-color: #f9f9f9;
+    font-size: 1em;
+    transition: background-color 0.3s ease; /* Transición en celdas */
 }
 
 .tabla-codigos tr:nth-child(even) {
@@ -121,10 +129,9 @@ body {
 
 .tabla-codigos tr:hover {
     background-color: #ddd;
-    transform: translateY(-2px); /* Efecto de desplazamiento al pasar el ratón */
+    transform: translateY(-2px); /* Desplazamiento suave */
 }
 
-/* Mensaje cuando no hay códigos */
 .tabla-codigos td[colspan="3"] {
     font-style: italic;
     color: #888;
@@ -136,7 +143,12 @@ body {
         width: 80%;
     }
 
+    .form-registrar button {
+        width: 80%; /* Asegura que el botón se ajuste bien */
+    }
+
     .tabla-codigos th, .tabla-codigos td {
         padding: 10px;
+        font-size: 0.9em; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
     }
 }
