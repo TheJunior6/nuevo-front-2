@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    background-color: #ffefd5; /* Color de fondo suave */
+    background-color: #e0f7fa; /* Cambia el color de fondo del cuerpo si deseas un tono más suave */
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
@@ -10,29 +10,30 @@ body {
 }
 
 form {
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+    background-color: #ffffff;
+    border-radius: 20px; /* Borde más redondeado */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Sombra ligeramente más fuerte */
     padding: 40px;
-    width: 300px;
+    width: 350px;
     text-align: center;
-    transition: box-shadow 0.3s ease; /* Transición en la sombra */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transición en sombra y escala */
 }
 
 form:hover {
-    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2); /* Más sombra en hover */
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2); /* Más sombra en hover */
+    transform: scale(1.02); /* Efecto de aumento en hover */
 }
 
 h1#txtBienvenida {
     font-size: 28px;
-    color: #ff6f61;
+    color: #ff7043; /* Color de texto ajustado */
     margin-bottom: 20px;
-    animation: bounce 1s ease-in-out 1; /* Animación de rebote más suave */
+    animation: bounce 1s ease-in-out 1;
 }
 
 h4.txt {
     font-size: 16px;
-    color: #555;
+    color: #666;
     margin-bottom: 5px;
     text-align: left;
 }
@@ -41,52 +42,52 @@ input.entry {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 2px solid #ff6f61;
-    border-radius: 8px;
+    border: 2px solid #ff7043; /* Color de borde actualizado */
+    border-radius: 10px; /* Borde más redondeado */
     outline: none;
     font-size: 14px;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave en borde */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 input.entry:focus {
-    border-color: #f44336;
-    box-shadow: 0 0 8px rgba(244, 67, 54, 0.4); /* Efecto de foco suave */
+    border-color: #ff5722; /* Color de borde en foco */
+    box-shadow: 0 0 8px rgba(255, 87, 34, 0.4); /* Sombra de foco */
 }
 
 input#btnEnviar {
     width: 100%;
-    padding: 10px;
-    background-color: #ff6f61;
+    padding: 12px; /* Un poco más de padding para el botón */
+    background-color: #ff7043; /* Color de fondo actualizado */
     color: white;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px; /* Borde más redondeado para el botón */
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 input#btnEnviar:hover {
-    background-color: #f44336;
+    background-color: #ff5722; /* Cambia el color en hover */
     transform: translateY(-3px);
 }
 
 input#btnEnviar:active {
-    transform: translateY(1px); /* Mejora el efecto de clic */
+    transform: translateY(1px);
 }
 
 button#forgotPasswordLink {
     margin-top: 15px;
     background-color: transparent;
-    color: #ff6f61;
+    color: #ff7043; /* Color de enlace actualizado */
     border: none;
     cursor: pointer;
     text-decoration: underline;
     font-size: 14px;
-    transition: color 0.3s ease; /* Transición suave en el color */
+    transition: color 0.3s ease;
 }
 
 button#forgotPasswordLink:hover {
-    color: #f44336;
+    color: #ff5722; /* Cambia el color del enlace en hover */
 }
 
 /* Animations */
@@ -95,7 +96,7 @@ button#forgotPasswordLink:hover {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-15px); /* Movimiento más pronunciado */
+        transform: translateY(-10px);
     }
     100% {
         transform: translateY(0);
