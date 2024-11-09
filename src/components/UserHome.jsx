@@ -22,7 +22,7 @@ function UserHome({ user }) {
         }
 
         try {
-            const response = await fetch("https://backganacomoloco-b1gi.vercel.app/v1/signos/registrarcodigo", {
+            const response = await fetch("https://back-sorteo.vercel.app", {
                 method: "POST",
                 headers: { 
                     "Content-Type": "application/json",

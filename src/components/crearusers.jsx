@@ -21,7 +21,7 @@ function Crearusuarios() {
             return;
         }
 
-        fetch(`https://backganacomoloco-b1gi.vercel.app/v1/signos/crear`, {
+        fetch(`https://back-sorteo.vercel.app`, {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ 
