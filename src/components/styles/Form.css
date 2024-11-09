@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    background-color: #e0f7fa; /* Fondo suave azul claro */
+    background-color: #f0f8ff; /* Fondo más claro */
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
@@ -10,60 +10,57 @@ body {
 }
 
 form {
-    background: linear-gradient(135deg, #00bfa5, #004d40); /* Gradiente de verde a verde oscuro */
-    border-radius: 50px 0 0 0; /* Redondeado en la esquina superior izquierda */
-    padding: 40px;
+    background: linear-gradient(135deg, #5e08fd, #7620ff); /* Gradiente de color de fondo */
+    border-radius: 30px 0px 30px 0px; /* Bordes personalizados */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+    padding: 50px 40px;
     width: 320px;
     text-align: center;
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); /* Sombra */
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%, 0% 70%, 30% 100%); /* Esquina inferior derecha en forma triangular */
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 form:hover {
     box-shadow: 0 12px 45px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05); /* Efecto de aumento en hover */
 }
 
 h1#txtBienvenida {
-    font-size: 28px;
-    color: #ffffff; /* Texto blanco */
-    margin-bottom: 20px;
+    font-size: 30px;
+    color: #ffffff; /* Texto en blanco para mayor contraste */
+    margin-bottom: 25px;
+    animation: bounce 1s ease-in-out 1;
 }
 
 h4.txt {
     font-size: 16px;
-    color: #ffffff; /* Texto blanco */
+    color: #ffffff;
     margin-bottom: 10px;
     text-align: left;
 }
 
 input.entry {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 15px;
-    border: 2px solid #ffffff; /* Borde blanco */
-    border-radius: 8px;
+    border: none;
+    border-radius: 15px; /* Bordes más redondeados */
     outline: none;
     font-size: 14px;
-    background-color: #ffffff; /* Fondo blanco */
-    color: #004d40; /* Texto verde oscuro */
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 2px 10px rgba(255, 87, 34, 0.3); /* Sombra en los inputs */
 }
 
 input.entry:focus {
-    border-color: #00796b; /* Verde medio en focus */
-    box-shadow: 0 0 8px rgba(0, 77, 64, 0.4);
+    box-shadow: 0 4px 15px rgba(255, 87, 34, 0.5); /* Sombra de foco */
 }
 
 input#btnEnviar {
     width: 100%;
-    padding: 10px;
-    background-color: #004d40; /* Fondo verde oscuro */
-    color: #ffffff; /* Texto blanco */
+    padding: 12px;
+    background-color: #ffffff; /* Botón blanco para contraste */
+    color: #6406df; /* Color de texto del botón */
     border: none;
-    border-radius: 8px;
+    border-radius: 20px; /* Borde más redondeado */
     font-size: 16px;
     cursor: pointer;
     font-weight: bold;
@@ -71,14 +68,18 @@ input#btnEnviar {
 }
 
 input#btnEnviar:hover {
-    background-color: #00796b; /* Verde más claro en hover */
+    background-color: #ffe0b2; /* Color suave en hover */
     transform: translateY(-3px);
+}
+
+input#btnEnviar:active {
+    transform: translateY(1px);
 }
 
 button#forgotPasswordLink {
     margin-top: 15px;
     background-color: transparent;
-    color: #ffffff; /* Texto blanco */
+    color: #ffffff;
     border: none;
     cursor: pointer;
     text-decoration: underline;
@@ -87,5 +88,18 @@ button#forgotPasswordLink {
 }
 
 button#forgotPasswordLink:hover {
-    color: #c1f0ec;
+    color: #ffe0b2;
+}
+
+/* Animations */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
