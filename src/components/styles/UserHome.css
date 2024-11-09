@@ -1,7 +1,7 @@
 /* Estilos generales para la página */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #ffefd5;
+    background-color: #f0fff0; /* Fondo verde claro */
     color: #333;
     margin: 0;
     padding: 0;
@@ -13,20 +13,20 @@ body {
 
 /* Contenedor principal */
 .user-home {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra un poco más profunda */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Sombra más profunda */
     max-width: 800px;
     width: 100%;
     text-align: center;
-    transition: box-shadow 0.3s ease; /* Transición para sombra */
+    transition: box-shadow 0.3s ease;
 }
 
 /* Título principal */
 .user-home h1 {
     font-size: 2.5em;
-    color: #ff6347; /* Color vibrante */
+    color: #4caf50; /* Verde brillante */
     margin-bottom: 20px;
     font-weight: bold;
 }
@@ -46,42 +46,42 @@ body {
 
 .form-registrar input {
     padding: 12px;
-    font-size: 1.1em; /* Mayor tamaño para mejorar legibilidad */
+    font-size: 1.1em;
     width: 60%;
     margin-bottom: 15px;
-    border: 2px solid #ff6347;
+    border: 2px solid #4caf50; /* Verde */
     border-radius: 8px;
-    transition: border-color 0.3s, box-shadow 0.3s ease; /* Transición suave */
+    transition: border-color 0.3s, box-shadow 0.3s ease;
 }
 
 .form-registrar input:focus {
-    border-color: #e5533f;
-    box-shadow: 0 0 8px rgba(255, 99, 71, 0.5); /* Sombra al enfocarse */
+    border-color: #388e3c; /* Verde más oscuro */
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
 }
 
 .form-registrar button {
-    background-color: #ff6347;
+    background-color: #4caf50; /* Verde */
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 1.1em; /* Mayor tamaño de texto */
+    font-size: 1.1em;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .form-registrar button:hover {
-    background-color: #e5533f;
-    transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+    background-color: #388e3c; /* Verde más oscuro */
+    transform: scale(1.05);
 }
 
 .form-registrar button:active {
-    transform: scale(1); /* Vuelve a su tamaño original */
+    transform: scale(1);
 }
 
 /* Botón de refrescar */
 .btn-refresh {
-    background-color: #4682b4;
+    background-color: #1e88e5; /* Azul brillante */
     color: white;
     padding: 12px 20px;
     border: none;
@@ -93,8 +93,8 @@ body {
 }
 
 .btn-refresh:hover {
-    background-color: #357a9f;
-    transform: scale(1.05); /* Efecto de escala */
+    background-color: #1565c0; /* Azul más oscuro */
+    transform: scale(1.05);
 }
 
 /* Tabla de códigos registrados */
@@ -102,7 +102,7 @@ body {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    transition: box-shadow 0.3s ease; /* Transición suave para sombra */
+    transition: box-shadow 0.3s ease;
 }
 
 .tabla-codigos th, .tabla-codigos td {
@@ -112,7 +112,7 @@ body {
 }
 
 .tabla-codigos th {
-    background-color: #4682b4;
+    background-color: #1e88e5; /* Azul brillante */
     color: white;
     font-size: 1.1em;
 }
@@ -120,16 +120,16 @@ body {
 .tabla-codigos td {
     background-color: #f9f9f9;
     font-size: 1em;
-    transition: background-color 0.3s ease; /* Transición en celdas */
+    transition: background-color 0.3s ease;
 }
 
 .tabla-codigos tr:nth-child(even) {
-    background-color: #f1f1f1;
+    background-color: #e8f5e9; /* Verde muy claro */
 }
 
 .tabla-codigos tr:hover {
-    background-color: #ddd;
-    transform: translateY(-2px); /* Desplazamiento suave */
+    background-color: #c8e6c9; /* Verde más intenso */
+    transform: translateY(-2px);
 }
 
 .tabla-codigos td[colspan="3"] {
@@ -144,11 +144,11 @@ body {
     }
 
     .form-registrar button {
-        width: 80%; /* Asegura que el botón se ajuste bien */
+        width: 80%;
     }
 
     .tabla-codigos th, .tabla-codigos td {
         padding: 10px;
-        font-size: 0.9em; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+        font-size: 0.9em;
     }
 }
