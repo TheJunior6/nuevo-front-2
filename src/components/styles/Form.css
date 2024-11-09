@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    background-color: #f0f8ff; /* Fondo más claro */
+    background-color: #e0f7fa; /* Fondo suave azul claro */
     font-family: 'Poppins', sans-serif;
     display: flex;
     justify-content: center;
@@ -10,8 +10,8 @@ body {
 }
 
 form {
-    background: linear-gradient(135deg, #ff8a65, #ff7043); /* Gradiente de color de fondo */
-    border-radius: 30px 0px 30px 0px; /* Bordes personalizados */
+    background: linear-gradient(135deg, #6a1b9a, #8e24aa); /* Gradiente morado */
+    border-radius: 25px; /* Bordes redondeados */
     box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
     padding: 50px 40px;
     width: 320px;
@@ -21,12 +21,12 @@ form {
 
 form:hover {
     box-shadow: 0 12px 45px rgba(0, 0, 0, 0.3);
-    transform: scale(1.05); /* Efecto de aumento en hover */
+    transform: scale(1.05);
 }
 
 h1#txtBienvenida {
     font-size: 30px;
-    color: #ffffff; /* Texto en blanco para mayor contraste */
+    color: #ffffff; /* Texto blanco */
     margin-bottom: 25px;
     animation: bounce 1s ease-in-out 1;
 }
@@ -43,24 +43,26 @@ input.entry {
     padding: 12px;
     margin-bottom: 15px;
     border: none;
-    border-radius: 15px; /* Bordes más redondeados */
+    border-radius: 15px;
     outline: none;
     font-size: 14px;
     transition: box-shadow 0.3s ease;
-    box-shadow: 0 2px 10px rgba(255, 87, 34, 0.3); /* Sombra en los inputs */
+    background-color: #f3e5f5; /* Fondo lavanda claro */
+    color: #6a1b9a; /* Texto morado */
+    box-shadow: 0 2px 10px rgba(138, 43, 226, 0.3);
 }
 
 input.entry:focus {
-    box-shadow: 0 4px 15px rgba(255, 87, 34, 0.5); /* Sombra de foco */
+    box-shadow: 0 4px 15px rgba(138, 43, 226, 0.5);
 }
 
 input#btnEnviar {
     width: 100%;
     padding: 12px;
-    background-color: #ffffff; /* Botón blanco para contraste */
-    color: #ff7043; /* Color de texto del botón */
+    background-color: #4a148c; /* Fondo morado oscuro */
+    color: #ffffff; /* Texto blanco */
     border: none;
-    border-radius: 20px; /* Borde más redondeado */
+    border-radius: 20px;
     font-size: 16px;
     cursor: pointer;
     font-weight: bold;
@@ -68,7 +70,7 @@ input#btnEnviar {
 }
 
 input#btnEnviar:hover {
-    background-color: #ffe0b2; /* Color suave en hover */
+    background-color: #7b1fa2; /* Morado más claro en hover */
     transform: translateY(-3px);
 }
 
@@ -88,7 +90,7 @@ button#forgotPasswordLink {
 }
 
 button#forgotPasswordLink:hover {
-    color: #ffe0b2;
+    color: #ce93d8;
 }
 
 /* Animations */
